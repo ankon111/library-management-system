@@ -1,0 +1,469 @@
+{
+	"info": {
+		"name": "Production - Library Management System",
+		"_postman_id": "98151a3f-ba90-1dfd-56d6-e27c928ac024",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Author",
+			"description": "",
+			"item": [
+				{
+					"name": "SaveAuthor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzMzYyNn0.kw-1gcvJdn71zPESxxIlN1QTR8XwbqyhvvSyZNWO2TFezrNYD2Nv5e_nuKRGd3Z7neg8PjzsE5rvpZb-Zzh6-Q"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"authorName\":\"Jon Snow\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/library/saveAuthor",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"library",
+								"saveAuthor"
+							]
+						},
+						"description": "Save a new Author"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Author By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzMzYyNn0.kw-1gcvJdn71zPESxxIlN1QTR8XwbqyhvvSyZNWO2TFezrNYD2Nv5e_nuKRGd3Z7neg8PjzsE5rvpZb-Zzh6-Q"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "localhost:8080/api/v1/library/getAuthor/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"library",
+								"getAuthor",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "AuthorList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzMzYyNn0.kw-1gcvJdn71zPESxxIlN1QTR8XwbqyhvvSyZNWO2TFezrNYD2Nv5e_nuKRGd3Z7neg8PjzsE5rvpZb-Zzh6-Q"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "localhost:8080/api/v1/library/getAuthorList",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"library",
+								"getAuthorList"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"description": "",
+			"item": [
+				{
+					"name": "Book Category",
+					"description": "",
+					"item": [
+						{
+							"name": "Save Book Category",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzMzYyNn0.kw-1gcvJdn71zPESxxIlN1QTR8XwbqyhvvSyZNWO2TFezrNYD2Nv5e_nuKRGd3Z7neg8PjzsE5rvpZb-Zzh6-Q"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"categoryName\":\"Biology\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/library/saveBookCategory",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"library",
+										"saveBookCategory"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Get Book Category by ID",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzMzYyNn0.kw-1gcvJdn71zPESxxIlN1QTR8XwbqyhvvSyZNWO2TFezrNYD2Nv5e_nuKRGd3Z7neg8PjzsE5rvpZb-Zzh6-Q"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/library/getBookCategory/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"library",
+										"getBookCategory",
+										"3"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Get Book Category List",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzMzYyNn0.kw-1gcvJdn71zPESxxIlN1QTR8XwbqyhvvSyZNWO2TFezrNYD2Nv5e_nuKRGd3Z7neg8PjzsE5rvpZb-Zzh6-Q"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "localhost:8080/api/v1/library/getBookCategoryList",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"library",
+										"getBookCategoryList"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Book Details",
+					"description": "",
+					"item": [
+						{
+							"name": "Save Book Details",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwODY5NzA1NX0.DyYXGN1dYHIxMs_BzbDXtvJY6qL72Sfab1fVopr0mwwYL6gYWV_stfc5a8qHwOA9Px9yBX7Cz2n-FkrBAXibkA"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"bookName\":\"Social Problems and Solutions\",\n\t\"categoryId\": 4,\n\t\"authorId\": \"2\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/library/saveBookDetails",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"library",
+										"saveBookDetails"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Book Issue",
+					"description": "",
+					"item": [
+						{
+							"name": "Save Book Issue",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzNDgxMn0.Gds5bkgCNBToutw_x4aTDqGxk-l8_wY5EqsfO0s8IyR8f5pw6DAFABh6wReTstaudZb05tUhcXg8SuXXuFeEhg"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \n  \"bookId\" : 4,\n  \"dueDate\": \"2017-10-30\"\n  \n}"
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/library/saveBookissue",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"library",
+										"saveBookissue"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Get Issued Book List By User Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzNDgxMn0.Gds5bkgCNBToutw_x4aTDqGxk-l8_wY5EqsfO0s8IyR8f5pw6DAFABh6wReTstaudZb05tUhcXg8SuXXuFeEhg"
+									}
+								],
+								"body": {},
+								"url": {
+									"raw": "localhost:8080/api/v1/library/getIssuedBookListByUserId",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"library",
+										"getIssuedBookListByUserId"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Return Issued Book",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzNDgxMn0.Gds5bkgCNBToutw_x4aTDqGxk-l8_wY5EqsfO0s8IyR8f5pw6DAFABh6wReTstaudZb05tUhcXg8SuXXuFeEhg"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"bookId\":\"1\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/library/returnIssuedBook",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"library",
+										"returnIssuedBook"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Book Search",
+					"description": "",
+					"item": [
+						{
+							"name": "Book Search",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbmtvbjIyMiIsImV4cCI6MTUwOTAzNjEzMn0.TUTMguuBFB4ySVa7nZwrzMKYbqHvbN6P7hdzuJFZSnEbRoN5wNpq84bYLDBhv9ztFsbWyizSdLzguzvmedZxgg"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n\t\"keyWord\":\"t\",\n\t\"searchBy\": \"2\"\n}\n\n"
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/library/bookSearch",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"library",
+										"bookSearch"
+									]
+								},
+								"description": "\"keyWord\":\"\",\n\"searchBy\": \"0\" means get all book details.\n\n\nkeyWord = any String you want to find by name,author,category\n\nsearchBy =0 by all\nsearchBy =1 by name, \nsearchBy =2 by Author, \nsearchBy =3 by Book Category"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"description": "",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"ankon222\",\"password\":\"a12345\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"login"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\":\"admin2\",\n\t\"password\":\"admin2\",\n\t\"fullname\":\"Admin2\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/sign-up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"sign-up"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
